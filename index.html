@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ismingiz — Portfolio</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1c1c1a;--muted:#666660;--card:#fff;--line:#e4e4de;--accent:#2f6fed;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121211;--fg:#f1f1ec;--muted:#a0a09a;--card:#1b1b19;--line:#2c2c29;--accent:#6c9cff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121211;--fg:#f1f1ec;--muted:#a0a09a;--card:#1b1b19;--line:#2c2c29;--accent:#6c9cff;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:48px 20px}
+h1{font-size:clamp(2rem,6vw,3rem);margin:0 0 8px;line-height:1.15}
+h2{font-size:1.2rem;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.lead{color:var(--muted);font-size:1.15rem;margin:0 0 20px}
+.btn{display:inline-block;padding:10px 20px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 14px;font-size:.92rem}
+footer{margin-top:56px;color:var(--muted);font-size:.9rem}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<h1>Salom, men Ismingiz</h1>
+<p class="lead">Dasturchi va dizayner. Sodda, tez va foydali narsalar yarataman.</p>
+<a class="btn" href="#aloqa">Bog’lanish</a> <a class="btn" style="background:var(--card);color:var(--fg);border:1px solid var(--line)" href="https://github.com/lrealuvyc-gif" target="_blank" rel="noopener">GitHub</a>
+
+<h2>Men haqimda</h2>
+<p>Bu yerga o’zingiz haqingizda 2–3 jumla yozing: kimligingiz, nima bilan shug’ullanishingiz va nimaga qiziqishingiz.</p>
+
+<h2>Ko’nikmalar</h2>
+<div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Dizayn</span><span>Python</span></div>
+
+<h2>Loyihalar</h2>
+<div class="grid">
+<a class="card" style="text-decoration:none;color:inherit" href="https://github.com/lrealuvyc-gif/saytai" target="_blank" rel="noopener"><h3>saytai</h3><p>Qisqa tavsif: nima qilingan va qanday natija berilgan. GitHub’da ochish →</p></a>
+<div class="card"><h3>Loyiha 2</h3><p>Qisqa tavsif: nima qilingan va qanday natija berilgan.</p></div>
+<div class="card"><h3>Loyiha 3</h3><p>Qisqa tavsif: nima qilingan va qanday natija berilgan.</p></div>
+</div>
+
+<h2 id="aloqa">Aloqa</h2>
+<p>Email: <a href="mailto:siz@example.com">siz@example.com</a><br>GitHub: <a href="https://github.com/lrealuvyc-gif" target="_blank" rel="noopener">github.com/lrealuvyc-gif</a><br>Telegram: <a href="#aloqa">@username</a></p>
+
+<footer>© 2026 Ismingiz</footer>
+</main>
+</body>
+</html>
